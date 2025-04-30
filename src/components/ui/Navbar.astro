@@ -3,13 +3,13 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
   { href: '/about', label: 'Sobre Nosotros' },
-  { href: '/#services', label: 'Servicios' },
+  { href: '/#services', label: 'Productos' },
   { href: '/#cases', label: 'Logrado' },
   { href: '/pricing', label: 'Precios' },
   { href: '/articles', label: 'Contactanos'},
 ];
 
-const navButton = { href: 'https://github.com/manulthanura/Positivus', label: 'Request a quote' };
+const cartButton = { href: '/cart' };
 ---
 
 <div class="mt-20">
@@ -18,7 +18,7 @@ const navButton = { href: 'https://github.com/manulthanura/Positivus', label: 'R
       <Astronav>
         <div class="flex w-full lg:w-auto items-center justify-between">
           <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="/Logo.svg" class="h-8" alt="Logo" />
+            <img src="/Logoprueb.svg" class="h-24" alt="Logo" />
           </a>
           <div class="block lg:hidden">
             <div id="menu-icon" class="w-8 h-8 text-black cursor-pointer">
@@ -49,21 +49,24 @@ const navButton = { href: 'https://github.com/manulthanura/Positivus', label: 'R
             ))}
             <div class="lg:hidden flex items-center justify-center mt-3 gap-4">
               <a 
-                class="mobile-nav-link px-9 py-5 rounded-2xl border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex" 
-                href={navButton.href}
+                class="mobile-nav-link p-2 rounded-full border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex"
+                href={cartButton.href}
                 data-close-menu="true"
               >
-                <h2 class="text-center text-xl font-normal leading-7">{navButton.label}</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.4 7m12.4-7l1.4 7M9 21a1 1 0 11-2 0 1 1 0 012 0zm10 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                </svg>
               </a>
             </div>
           </ul>
         </nav>
       </Astronav>
-
       <div>
         <div class="hidden lg:flex items-center gap-4">
-          <a class="px-9 py-5 rounded-2xl border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex" href={navButton.href}>
-            <h2 class="text-center text-xl font-normal leading-7">{navButton.label}</h2>
+          <a class="p-2 ml-72 rounded-full border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex" href={cartButton.href}>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.4 7m12.4-7l1.4 7M9 21a1 1 0 11-2 0 1 1 0 012 0zm10 0a1 1 0 11-2 0 1 1 0 012 0z" />
+            </svg>
           </a>
         </div>
       </div>
