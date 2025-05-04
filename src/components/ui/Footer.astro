@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import Facebook from "../../assets/facebook.svg";
 import Linkedin from "../../assets/linkedin.svg";
-import Logo from "../../assets/logo-alt.svg";
+
 import Twitter from "../../assets/twitter.svg";
 import ShortForm from "../ui/ShortForm.astro";
 
@@ -13,11 +13,11 @@ const logos = [
 ];
 
 const links = [
-  { name: "About us", href: "#about" },
-  { name: "Services", href: "#services" },
-  { name: "Use Cases", href: "#cases" },
-  { name: "Pricing", href: "#Testimonials" },
-  { name: "Blog", href: "#Home" },
+  { name: "Sobre nosotros", href: "#about" },
+  { name: "Productos", href: "#services" },
+  { name: "Logrado", href: "#cases" },
+  { name: "Precios", href: "#Testimonials" },
+  { name: "Contactanos", href: "#Home" },
 ];
 ---
 
@@ -30,11 +30,11 @@ const links = [
         <div
           class="flex flex-col lg:flex-row gap-7 items-center justify-between"
         >
-          <picture>
+            <picture>
             <a href="#home">
-              <Image src={Logo} alt="Logo for Kreatif Brand" />
+              <img src="/public/logobrayanblanco.png" alt="" class="w-72" />
             </a>
-          </picture>
+            </picture>
           <ul class="flex flex-col sm:flex-row gap-5">
             {
               links.map((link) => {
@@ -69,12 +69,12 @@ const links = [
           <div
             class="flex text-center lg:text-start flex-col w-full lg:w-[30%]"
           >
-            <h3 class="mb-5 text-center md:text-left text-2xl text-green">Contact us</h3>
+            <h3 class="mb-5 text-center md:text-left text-2xl text-red-600">Contactanos</h3>
             <div class="flex flex-col justify-between gap-4">
-              <span> Email: examplemail.com </span>
-              <span> Phone: +123 456 789 </span>
+              <span> Email: brayan_acxel@outlook.es </span>
+              <span> Telefono: +569 4840 1507 </span>
               <span class="lg:w-3/4">
-                Address: 1234 Street Name, City Name, Country Name
+                Direccion: Tienda Digital
               </span>
             </div>
           </div>
@@ -89,7 +89,7 @@ const links = [
         class="flex flex-col lg:flex-row h-20 justify-center mt-4 text-center md:justify-between md:mt-0"
       >
         <span
-          >2024 Positivus - Made With <a
+          >2025 Footweare - Made With <a
             class="underline"
             target="_blank"
             href="https://astro.build">Astro</a
@@ -97,20 +97,16 @@ const links = [
           <a 
           class="underline"
           target="_blank"
-          href="https://manulthanura.com">Manul</a
+          href="https://github.com/jeremyxxo14">Jeremy</a
           ></span
         >&nbsp
         <span>
-          Credits (
-          <a
-            href="https://www.olgaskuja.design/"
-            target="_blank"
-            class="underline">Olga</a
-          >,
+          Creditos (
+          
           <a
             href="https://esteban-vasquez.netlify.app/"
             target="_blank"
-            class="underline">Esteban</a
+            class="underline">brayan</a
           >)
           <span> &</span>
           <a

@@ -14,12 +14,12 @@ const cartButton = { href: '/cart' };
 
 <div class="mt-20">
   <nav class="w-full top-0 left-0 z-50 fixed bg-white">
-    <header class="flex flex-col lg:flex-row justify-between items-center my-5 px-6 md:px-32">
+    <header class="flex flex-col lg:flex-row justify-between items-center  px-6 md:px-32">
       <Astronav>
         <div class="flex w-full lg:w-auto items-center justify-between">
-          <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="/Logoprueb.svg" class="h-24" alt="Logo" />
-          </a>
+            <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="/logobrayan.png" class="h-20 lg:h-32" alt="Logo" />
+            </a>
           <div class="block lg:hidden">
             <div id="menu-icon" class="w-8 h-8 text-black cursor-pointer">
               <!-- Open (hamburger) icon -->
@@ -38,24 +38,24 @@ const cartButton = { href: '/cart' };
           <ul class="font-medium flex flex-col p-4 lg:p-0 mt-4 border rounded-lg lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0">
             {menuitems.map((item, index) => (
               <li>
-                <a 
-                  href={item.href} 
-                  class="mobile-nav-link block py-2 px-3 text-black rounded lg:bg-transparent lg:p-0"
-                  data-close-menu="true"
-                >
-                  {item.label}
-                </a>
+          <a 
+            href={item.href} 
+            class="mobile-nav-link block py-2 px-3 text-black rounded lg:bg-transparent lg:p-0 transition transform duration-300 ease-in-out hover:scale-110 hover:shadow-[0_0_10px_rgba(255,255,255,0.8)]"
+            data-close-menu="true"
+          >
+            {item.label}
+          </a>
               </li>
             ))}
             <div class="lg:hidden flex items-center justify-center mt-3 gap-4">
               <a 
-                class="mobile-nav-link p-2 rounded-full border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex"
-                href={cartButton.href}
-                data-close-menu="true"
+          class="mobile-nav-link p-2 rounded-full border border-zinc-900 bg-white hover:bg-black text-black hover:text-white transition transform duration-300 ease-in-out hover:scale-110 hover:shadow-[0_0_10px_rgba(255,255,255,0.8)] inline-flex"
+          href={cartButton.href}
+          data-close-menu="true"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.4 7m12.4-7l1.4 7M9 21a1 1 0 11-2 0 1 1 0 012 0zm10 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.4 7m12.4-7l1.4 7M9 21a1 1 0 11-2 0 1 1 0 012 0zm10 0a1 1 0 11-2 0 1 1 0 012 0z" />
+          </svg>
               </a>
             </div>
           </ul>
@@ -63,7 +63,7 @@ const cartButton = { href: '/cart' };
       </Astronav>
       <div>
         <div class="hidden lg:flex items-center gap-4">
-          <a class="p-2 ml-72 rounded-full border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex" href={cartButton.href}>
+          <a class="p-2 ml-72 rounded-full border border-zinc-900 bg-black hover:bg-white text-white hover:text-black inline-flex" href={cartButton.href}>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.4 7m12.4-7l1.4 7M9 21a1 1 0 11-2 0 1 1 0 012 0zm10 0a1 1 0 11-2 0 1 1 0 012 0z" />
             </svg>

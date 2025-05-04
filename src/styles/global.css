@@ -29,7 +29,7 @@
   }
 
   :root {
-    --green: #b9ff66;
+    --green: #ff6b6b;
     --black: rgb(0, 0, 0);
     --dark: #191a23;
     --gray: #f3f3f3;
@@ -195,19 +195,20 @@
 }
 
 .card::after {
-  content: "Add to Cart";
+  content: "Agregar al carrito";
   position: absolute;
   bottom: -50%;
   left: 0;
   padding-left: 15px;
-  background: #181818;
+  background: #e7e7e78f;
   width: 100%;
   height: 60px;
-  color: #fff;
+  color: #000000;
+  font-weight: bold;
   line-height: 50px;
   text-transform: uppercase;
   z-index: 2;
-  transition: all .2s ease-in;
+  transition: all .3s ease-in;
 }
 
 .card:hover::after {
@@ -215,7 +216,7 @@
 }
 
 .card:active::after {
-  content: "Adding !";
+  content: "Agregado !";
   height: 65px;
 }
 
@@ -223,12 +224,11 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100px;
+  width: 350px;
   height: auto;
-  filter: drop-shadow(3px 3px 5px #18181815);
   transform: translate(-50%, -50%);
   animation: shoes 1s ease infinite alternate;
-  transition: all .5s ease-in;
+  transition: all .3s ease-in;
 }
 
 @keyframes shoes {
@@ -244,10 +244,10 @@
 .card:hover .image {
   /* top: 20%;
   left: 30%; */
-  width: 220px;
+  width: 350px;
   height: auto;
   animation: none;
-  transform: rotate(15deg) translate(-35%, -25%);
+  transform: rotate(15deg) translate(-40%, -25%);
 }
 
 .text {
